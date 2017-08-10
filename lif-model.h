@@ -23,14 +23,12 @@
 
 #include <default_gui_model.h>
 
-class PluginTemplate : public DefaultGUIModel
+class LifModel : public DefaultGUIModel
 {
 
-  Q_OBJECT
-
 public:
-  PluginTemplate(void);
-  virtual ~PluginTemplate(void);
+  LifModel(void);
+  virtual ~LifModel(void);
 
   void execute(void);
   void createGUI(DefaultGUIModel::variable_t*, int);
@@ -40,16 +38,24 @@ protected:
   virtual void update(DefaultGUIModel::update_flags_t);
 
 private:
-  double some_parameter;
-  double some_state;
-  double period;
-
   void initParameters();
+  
+  double period;
+  int steps;
+  
+  double V;
+  double Cm;
+  double Gl;
+  double El;
+  double Vp;
+  double Vt;
+  double Tr;
+  double Ipulse;
+  double Tpulse;
+  int count_pulse;
+  double rate;
+  double last_spike;
+  double systime;
+  long long count;
 
-private slots:
-  // these are custom functions that can also be connected to events
-  // through the Qt API. they must be implemented in plugin_template.cpp
-
-  void aBttn_event(void);
-  void bBttn_event(void);
 };

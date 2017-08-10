@@ -1,9 +1,9 @@
-PLUGIN_NAME = plugin_template
+PLUGIN_NAME = lif_model
 
-HEADERS = plugin-template.h
+HEADERS = lif-model.h
 
-SOURCES = plugin-template.cpp\
-          moc_plugin-template.cpp\
+SOURCES = lif-model.cpp\
+          moc_lif-model.cpp\
 
 LIBS = 
 
