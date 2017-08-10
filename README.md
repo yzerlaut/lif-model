@@ -1,16 +1,21 @@
-###Plugin Template
+### Leaky Integrate and Fire for ![RTXI](https://github.com/RTXI/rtxi)
 
 **Requirements:** None  
 **Limitations:** None  
 
-![Plugin Template GUI](plugin-template.png)
+![Leaky Integrate and Fire model](exc-inh-shotnoise-input.png)
 
 <!--start-->
-This is the plugin template, also known in previous versions as MyPluginGUI. It is designed to provide a simplified interface with which anyone fork into custom RTXI modules. For instructions and tutorials regarding its use, see [the documentation on our website](http://rtxi.org/docs/tutorials/2015/04/15/understanding-plugin-template/). 
+
+This module aims at implementing the simplest spiking model of neocortical neurons: the leaky integrate-and-fire model (LIF-model). This model can then be used to mimick intracellular recordings and build experimental protocols (such as dynamics clamp, e.g. ![this example](https://github.com/yzerlaut/exc-inh-shotnoise-input)).
+
+The config file producing the snapshot (i.e. combined with my LIF-model implementation) can be found on this ![link](https://github.com/yzerlaut/my_rtxi_configs/blob/master/lif-current-input.set)
+
+
 <!--end-->
 
-####Paramaters
-1. GUI Label - Example parameter
+####Parameters
 
-####States
-1. A State - An example state
+see GUI 
+
+
