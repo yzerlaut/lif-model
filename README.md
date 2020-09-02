@@ -3,7 +3,7 @@
 **Requirements:** None  
 **Limitations:** None  
 
-![Leaky Integrate and Fire model](exc-inh-shotnoise-input.png)
+![Leaky Integrate and Fire model](lif-model.png)
 
 <!--start-->
 
